@@ -31,6 +31,25 @@ header {
     border-color: #c28008;
 }
 
+.msg {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+#info-container .already-joined-msg {
+    margin: 15px 0;
+    color: #004885;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff;
+    padding: 10px;
+    width: 310px;
+}
+
 /* navbar */
 
 #navbar img {
@@ -77,6 +96,7 @@ header {
 
 /* events list */
 #events-container {
+    width: 100%;
     padding: 50px;
 }
 
@@ -91,14 +111,15 @@ header {
 
 #cards-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #events-container .card {
-    flex: 1 1 0;
-    max-width: 25%;
+    flex: 1 1 24%;
+    max-width: 24%;
     border-radius: 10px;
     padding: 0;
-    margin: 5px;
+    margin: 0.5%;
 }
 
 #events-container img {
@@ -122,6 +143,116 @@ header {
 .card-participants {
     font-size: 14px;
     color: #757575;
+}
+
+/* event create page */
+
+#event-create-container {
+    padding: 30px;
+}
+
+#event-create-container {
+    font-weight: bold;
+}
+
+#event-create-container form .form-group {
+    margin: 1.5rem 0;
+}
+
+#event-create-container form .form-group label {
+    margin-bottom: 0.5rem;
+}
+
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea {
+    font-size: 14px;
+    padding: 0.7rem;
+}
+
+/* event page */
+
+#image-container,
+#info-container {
+    margin-top: 30px;
+}
+
+#image-container img {
+    border-radius: 10px;
+}
+
+#info-container h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3,
+#description-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon {
+    font-size: 20px;
+    color: #f2a340;
+    margin-right: 5px;
+}
+
+#info-container #event-submit {
+    margin: 20px 0;
+}
+
+#description-container {
+    margin-top: 15px;
+}
+
+#items-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li {
+    display: flex;
+}
+
+/* dashboard */
+
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-events-container th {
+    width: 25%;
+}
+
+.dashboard-events-container table tbody tr a {
+    text-decoration: none;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.event-title-field:hover {
+    text-decoration: underline;
+}
+
+.dashboard-events-container form {
+    display: inline-block;
+}
+
+/* edit page */
+
+.img-preview {
+    width: 100px;
+    margin-top: 20px;
 }
 
 /* footer */
